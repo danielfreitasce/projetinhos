@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+h1{
+  font-size: 22px;
+}
+#hands{
+  list-style-type: none;
+  font-size: 4em;
+}
+#hands li{
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  list-style-position: inside;
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+main{
+  background-color: #f6f6f6;
+  width: 60%;
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.choice {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+}
+
+#user-choice, 
+#cpu-choice{
+  display: inline;
+  font-size: 3em;
+  margin: 10px;
+  padding: 10px;
+}
+
+legend {
+  font-size: 12px;
+}
+
+#result{
+  font-size: 22px;
+}

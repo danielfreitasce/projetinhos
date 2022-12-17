@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pedra, papel, tesoura</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <h1>Vamos jogar Pedra, papel, tesoura</h1>
+    <div class="descricao">
+      <div class="choice">
+        <p id="user-choice"></p>
+        <legend class="legenda">Sua escolha</legend>
+      </div>
+      <div class="choice">
+        <p id="cpu-choice"></p>
+        <legend class="legenda">Minha escolha</legend>
+      </div>
+      <p id=result></p>
+    </div>
+    <div class="choices">
+      <ul id="hands">
+        <li id="pedra">&#9994;</li>
+        <li id="papel">&#9995;</li>
+        <li id="tesoura">&#9996;</li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
