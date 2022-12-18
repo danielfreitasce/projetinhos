@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main class="container">
+    <section id="rb-section">
+      <img src="assets/roborat.png" id="rb-img" class="logotipos" />
+      <label for="roboRat-v">Votos válidos</label>
+      <input type="number" id="roboRat-v" min="0" step="1">
+      <label for="roboRat-inv">Votos inválidos</label>
+      <input type="number" id="roboRat-inv" min="0" step="1">
+    </section>
+    <section id="spkb-section">
+      <img src="assets/spkeyboard.png" id="spkb-img" class="logotipos" />
+      <label for="spK-v">Votos válidos</label>
+      <input type="number" id="spK-v" min="0" step="1">
+      <label for="spK-inv">Votos inválidos</label>
+      <input type="number" id="spK-inv" min="0" step="1">
+    </section>
+    <br>
+  </main>
+  <div id="button-result">
+    <button id="bt-result" class="button button1">Ver resultados</button>
+  </div>
+  <div id="results" class="container">
+  </div>
+  <div id="invalid-results" class="container">
+  </div>
+  <div id="valid-results" class="container">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
