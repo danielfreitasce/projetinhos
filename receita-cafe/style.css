@@ -1,0 +1,46 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a17257;
+  }
+  
+  #cup-img{
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+  }
+  
+  select {
+    margin-top: 20px;
+    width: 50px;
+  
+  }
+  
+  
+  h1{
+    text-align: center;
+    color: white; 
+  }
+  
+  #card{
+    background: #111;
+    color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 5px;
+    max-width: 60%;
+    margin: auto;
+  }
+  
+  #instructions{
+    margin-top: 50px;
+    color: #b2b2b2;
+  }
+  
+  span{
+    color: #febe01
+  }
+  
