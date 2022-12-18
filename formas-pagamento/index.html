@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Informações do pagamento</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main class="flex">
+    <div id="data-input" class="flex">
+
+      <label for="purchase">Total da compra:</label>
+      <input type="number" id="purchase" class="info-input" name="purchase" step="0.01" placeholder="00,00" autofocus
+        required>
+
+      <label for="payment-method">Forma de pagamento:</label>
+      <select name="payment-method" id="payment-method" class="info-input">
+        <option value=""></option>
+        <optgroup label="Pagamento à vista">
+          <option value="Dinheiro">Dinheiro</option>
+          <option value="Débito">Débito</option>
+          <option value="Crédito">Crédito</option>
+        </optgroup>
+        <optgroup label="Pagamento à prazo">
+          <option value="3x">Até 3x</option>
+          <option value="Parcelado">Informar parcelas</option>
+        </optgroup>
+      </select>
+
+      <label id="installment-label" for="installment">Quantidade de parcelas: </label>
+      <input type="number" id="installment" class="info-input" name="installment" step="1" min="4" max="12" disabled>
+
+    </div>
+    <div id="payment-info">
+      <div id="values">
+        <p>Valor total da compra:<span id="valor-total-compra"></span></p>
+        <p>Forma de pagamento: <span id="forma-pagamento"></span></p>
+        <p>Acréscimos: <span id="acrescimos"></span></p>
+        <p>Descontos: <span id="descontos"></span></p>
+        <p class="hide-elem">Valor da parcela: <span id=valor-parcela></span> </p>
+      </div>
+      <label for="amount-to-pay"><b>Total a pagar: R$</b> </label>
+      <input type="number" id="to-pay" name="amount-to-pay" step="0.01" readonly>
+    </div>
+  </main>
+  <div class="regras">
+    <h3>Regras de pagamento: </h3>
+    <li>Pagamento à vista, no dinheiro: desconto de 10%;</li>
+    <li>Pagamento à vista, no débito: desconto de 08%;</li>
+    <li>Pagamento à vista, no crédito: desconto de 05%;</li>
+    <li>Pagamento a prazo, até 3x, no débito: sem desconto;</li>
+    <li>Pagamento a prazo, acima de 3x, no débito: acréscimo de 4%. </li>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

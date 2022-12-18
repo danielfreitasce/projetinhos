@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+padding:0;
+margin:0;
+}
+
+.hide-elem{
+  display : none;  
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1.05em;
+}
+
+input,
+select{
+  font-size: 1.1em;
+  max-width: 220px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.flex{
+  display: flex;
+}
+
+main{
+  flex-wrap: wrap;
+  max-width: 700px;
+	margin: 50px auto;
+  padding: 20px;
+  background: #8ab4f8;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.info-input{
+  margin: 5px 0 10px 0;
+}
+
+#data-input,
+#payment-info{
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#values p{
+  margin: 10px 0px ;
+}
+#to-pay{
+  font-size: 1.1em;
+    max-width: 200px;
+}
+
+#values span{
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.white{
+  background-color: white ;
+}
+
+.regras{
+  list-style: none;
+  margin: 50px auto;
+  padding: 10px;
+  max-width: 400px;
+  font-size: 0.8rem;
+  background-color: #87c3ff;
+  border: 0 solid #707070;
+  border-radius: 5px;
+}
+
