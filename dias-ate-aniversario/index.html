@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <form>
+      <p>Quantos dias faltam para o seu aniversário ou quantos dias já se passaram?</p>
+      <label for="day">Dia: </label>
+      <input id="day" type="number" step="1" min="1" max="31"></input>
+      <label for="month">Mês: </label>
+      <input id="month" type="number" step="1" min="1" max="12"></input>
+      <script src="script.js"></script>
+      <button type="submit" onClick="verify(event)">Verificar</button>
+    </form>
+    <div id="result"></div>
+  </main>
+</body>
+
+</html>

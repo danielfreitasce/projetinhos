@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #1c2333;
+  }
+  
+  main{
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+  }
