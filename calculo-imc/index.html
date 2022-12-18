@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main> 
+        <h3>Cálculo IMC</h3>
+
+    <div class="inputs">
+        <div class="inputs-calc">
+            <span>Altura <small>(ex.: 1,75)</small></span>
+            <input type="text" placeholder="Metros" id="altura_input" maxlength="4" inputmode="numeric" 
+            oninput="this.value = this.value.replace(/[^0-9,]/g, '')">
+        </div>  
+        
+        <div class="inputs-calc">
+            <span>Peso <small>(ex.: 70,2)</small></span>
+            <input type="text" placeholder="Quilos" id="peso_input" maxlength="6" inputmode="numeric"
+            oninput="this.value = this.value.replace(/[^0-9,]/g, '')">
+        </div>  
+    </div>
+
+        
+        <ul class="list-buttons">
+            <li><button type="button" id="submit_calc">Calcular</button></li>
+            <li><button type="button" id="clear_calc">Limpar</button></li>
+        </ul>
+
+
+        <table class="imc-table" cellspacing="0">
+
+            <thead>
+                <tr>
+                    <td colspan="3">Veja a interpretação do IMC</td>
+                </tr>
+            </thead>
+
+            <tbody>						
+                <tr class="table-blue">
+                    <td>IMC</td>
+                    <td>Classificação</td>
+                    <td style="text-align: center">Obesidade <small>(grau)</small></td>
+                </tr>
+                
+                <tr class="table-row" id="result_calc_0">
+                    <td>Menor que 18,5</td>
+                    <td>Magreza</td>
+                    <td style="text-align: center">0</td>
+                </tr>
+                
+                <tr class="table-row"  id="result_calc_1">
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Normal</td>
+                    <td style="text-align: center">0</td>
+                </tr>
+                
+                <tr class="table-row"  id="result_calc_2">
+                    <td>Entre 25,0 e 29,9</td>
+                    <td>Sobrepeso</td>
+                    <td style="text-align: center">I</td>
+                </tr>
+                
+                <tr class="table-row"  id="result_calc_3">
+                    <td>Entre 30,0 e 39,9</td>
+                    <td>Obesidade</td>
+                    <td style="text-align: center">II</td>
+                </tr>
+
+                <tr class="table-row"  id="result_calc_4">
+                    <td>Maior que 40,0</td>
+                    <td>Obesidade Grave</td>
+                    <td style="text-align: center">III</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <div class="result">
+            <span>SEU IMC:</span>
+            <strong id="imc-result"></strong>
+        </div>
+
+   
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
