@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-body {
-    height: 100%;
-    width: 100%;
-    background-color: #4b92c5;
+html, body{
+    background-color: #0e1525;
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -14,183 +12,108 @@ body {
 
 main{
     position: fixed;
-    right: calc(50vw - 420px);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid #111;
-    border-radius: 3px;
-    width: 800px;
-    height: 600px;
-    background-color: #687779;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-    -moz-appearance:textfield;
-}
-
-.atm-ui{
+    top: calc(50vh - 400px);
+    right: calc(50vw - 300px);
+    background-color: white;
+    border: 3px solid #0e4e92;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+    max-width: 800px;
+    width: 600px;
+    height: 500px;
     padding: 10px;
-    background-color: #818588;
-    width: calc(800px - 180px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.tela{
-    background-color: #cdcdcd;
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #111;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+h3{
+    color: #3E74BA;
+    font-weight: 700;
+    margin: 20px 0;
 }
-
-.aside-buttons{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.teclado{
+.inputs,
+.list-buttons{
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    align-self: center;
+    justify-content: space-around;
 }
 
-.teclado li{
+.list-buttons{
     list-style-type: none;
 }
 
-.tlc-num{
-   width: 220px;
-}
-
-.tlc-num-list{
-    display: flex;
-    flex-direction: space-between;
-    flex-wrap: wrap;
-}
-
-.tlc-num-list li{
-    margin: 3px;
-    background-color: #707070;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    font-size: 2rem;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
-
-
-.list-aside-buttons{
-    list-style-type: none;
-}
-
-.list-aside-buttons li{
-    background-color: #8f8f91;
-    border: 2px solid #3b4445;
-    border-radius: 3px;
-    margin:10px 10px;
-    cursor: pointer;
-    width: 70px;
-    height: 70px;
-}
-
-.tlc-opt{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.list-tlc-opt li{
-    margin: 5px;
+.list-buttons button{
     padding: 10px;
-    border: 0 solid;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-#anula{
-    background-color:#c50b0f; 
-    color: #fff;
-}
-
-#corrige{
-    background-color: yellow;
-    color: #111;
-}
-
-#confirma{
-    background-color: green;
-    color: #fff;
-}
-
-.tela-input p,
-.tela-input input,
-.error,
-.disponiveis{
-    margin: 5px;
-}
-.tela-input p{
-    font-size: 2rem;
-}
-.tela-input input{
-    border-radius: 5px;
-    height: 50px;
-    font-size: 2rem;
-}
-
-.novo-saque{
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.novo-saque span{
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    padding: 10px;
-    background: #8f8f91;
+    border-radius: 20px;
     border: 0;
-    border-radius: 5px;
     cursor: pointer;
+    width: 100px;
+    background-color: #083672;
+    color: #fff;
+    transition: .25s;
 }
 
-.novo-saque ul{
-    list-style-type: none;
-    padding: 10px;
+#clear_calc{
+    background-color: #0C4792;
 }
-.error,
-.disponiveis{
-    display: block;
-    text-transform: uppercase;
-    font-size: 12px;
+
+.list-buttons button:hover{
+    background-color: #2965A3;
+}
+
+.inputs-calc span {
     font-weight: 600;
+    display: block;
+    color: #3E74BA;
 }
 
-.error{
-    color: red;
+.inputs-calc input {
+    display: block;
+    width: 130px;
+    padding: 6px 10px;
+    border: 1px solid #3E74BA;
+    border-radius: 10px;
 }
 
-.disponiveis{
-  color: grey;
-  font-weight: 700;
+.imc-table thead td{
+    background-color: #083672;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.imc-table tbody tr td{
+    padding: 8px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.table-blue td{
+    color: #1f5eaf;
+}
+
+.table-row{
+    color: #707070;
+}
+
+.result{
+    font-weight: 600;
+    color: #fff;
+    background-color: #083672;
+    width: 200px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.result-cal{
+    background-color: #6391CB !important;
+    border: 3px solid !important;
+    border-radius: 10px !important;
+    color: #fff !important;
+    transition: .2s;
 }
